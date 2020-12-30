@@ -1,0 +1,31 @@
+#web.upload-path=C:/Users/Administrator/Desktop/pic/
+#spring.mvc.static-path-pattern=/**
+#spring.resources.static-locations=classpath:/META-INF/resources/,classpath:/resources/,\
+#  classpath:/static/,classpath:/public/,file:${web.upload-path}
+
+#server:
+#    port: 8888
+#    servlet:
+#        context-path: /java001
+spring:
+  profiles:
+    active: test
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mybatis:
+   mapper-locations: classpath:mapper/*.xml
+   type-aliases-package: com.offcn.po
+offcn_ip:
+    1.1.1.1
+offcn_port:
+    9999
+userbody:
+    name: 你爹
+    password: 123456
+    birthday: 0001.01.01
+    mobile: 123432123
+    address: 祖安
